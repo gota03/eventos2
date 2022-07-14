@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css">
+
+</head>
+<body>
+
+     <!-- TELA PARA CRIAR CONTA -->
+
+     <h1 class="text-center mt-4">
+
+         Faça seu cadastro aqui
+
+     </h1>
+
+     <section class="col-6 border border-2 border-dark border-opacity-75 rounded mx-auto mt-4" id="dados">
+
+        <div class="container-fluid p-4">
+
+            <form action="">
+
+                <section class="row">
+
+                    <div class="row-6">
+
+                        <label class="fs-3" for="nome">Nome</label>
+
+                        <input type="text" name="nome" id="nome" placeholder="Digite seu nome" class="form-control mt-2 border-dark p-2" minlength="5" required>
+
+                    </div>
+
+                    <div>
+
+                        <label class="fs-3 mt-3" for="sobrenome">Sobrenome</label>
+
+                        <input type="text" name="sobrenome" id="sobrenome" placeholder="Digite seu sobrenome" class="form-control mt-2 border-dark p-2" minlength="5" required>
+
+                    </div>
+
+                    <div class="row-6">
+
+                        <label class="fs-3 mt-3" for="criarEmail">E-mail</label>
+
+                        <input type="email" name="email" id="criarEmail" placeholder="Digite seu e-mail" class="form-control mt-2 border-dark p-2" required>
+
+                    </div>
+
+                    <div class="row-6">
+
+                        <label class="fs-3 mt-3" for="telefone">Telefone</label>
+
+                        <input type="number" name="telefone" id="telefone" placeholder="Digite seu número de telefone" class="form-control border-dark p-2 mt-2" required>
+
+                    </div>
+
+                    <div class="row-6">
+
+                        <label class="fs-3 mt-3" for="criarSenha">Criar senha</label>
+
+                        <input type="password" name="criarSenha" id="criarSenha" placeholder="Digite sua senha" class="form-control border-dark p-2 mt-2"  min="4" required>
+
+                    </div>
+
+                </section>
+
+            </form>
+
+        </div>
+
+    </section>
+
+    <script src="cadastro.js"></script>
+
+</body>
+</html>

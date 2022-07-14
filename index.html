@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+
+    <header class="sticky-top">
+
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark text-white">
+
+            <div class="container-fluid">
+
+                <a class="navbar-brand ms-2" href="index.html">Eventos</a>
+
+            </div>
+
+        </nav>
+
+    </header>
+
+<!-- TELA INICIAL DE LOGIN -->
+
+    <section class="col-6 border border-2 border-dark border-opacity-75 rounded mx-auto mt-4">
+
+        <div class="container-fluid p-4">
+
+            <form action="">
+
+                <section class="row">
+
+                    <div class="row-6">
+
+                        <label class="fs-3 mt-4" for="email">E-mail</label>
+
+                        <input type="email" name="email" id="email" placeholder="Informe o seu email" class="form-control border-dark mt-2 p-2">
+
+                    </div>
+
+                    <div class="row-6 mt-3">
+
+                        <label class="fs-3 mt-4" for="senha">Senha</label>
+
+                        <input type="password" name="senha" id="senha" class="form-control border-dark mt-2 p-2" placeholder="Informe sua senha" minlength="4">
+
+                    </div>
+
+                    <span class="mt-2" id="msgSenha"></span>
+
+                    <button class="btn btn-success border-dark mt-4 col-6 mx-auto">
+
+                        <p class="text-center fs-1">LOGIN</p>
+
+                    </button>
+
+                </section>
+
+                <p class="text-center mt-4 fw-bold">Não possui conta?
+
+                    <a class="link-primary text-decoration-none" href="cadastro.html" id="criarConta">clique aqui para criar uma</a>
+
+                </p>
+
+            </form>
+
+        </div>
+
+    </section>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
