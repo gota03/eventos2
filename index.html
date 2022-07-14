@@ -1,13 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Eventos</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
     <link rel="stylesheet" href="estilo.css">
+
 </head>
+
 <body>
 
     <header class="sticky-top">
@@ -26,52 +30,66 @@
 
 <!-- TELA INICIAL DE LOGIN -->
 
-    <section class="col-6 border border-2 border-dark border-opacity-75 rounded mx-auto mt-4">
+    <main>
 
-        <div class="container-fluid p-4">
+        <section class="col-md-6 col-sm-11 mx-auto mt-5 rounded" id="campo">
 
-            <form action="">
-
-                <section class="row">
-
-                    <div class="row-6">
-
-                        <label class="fs-3 mt-4" for="email">E-mail</label>
-
-                        <input type="email" name="email" id="email" placeholder="Informe o seu email" class="form-control border-dark mt-2 p-2">
-
-                    </div>
-
-                    <div class="row-6 mt-3">
-
-                        <label class="fs-3 mt-4" for="senha">Senha</label>
-
-                        <input type="password" name="senha" id="senha" class="form-control border-dark mt-2 p-2" placeholder="Informe sua senha" minlength="4">
-
-                    </div>
-
-                    <span class="mt-2" id="msgSenha"></span>
-
-                    <button class="btn btn-success border-dark mt-4 col-6 mx-auto">
-
-                        <p class="text-center fs-1">LOGIN</p>
-
-                    </button>
-
-                </section>
-
-                <p class="text-center mt-4 fw-bold">Não possui conta?
-
-                    <a class="link-primary text-decoration-none" href="cadastro.html" id="criarConta">clique aqui para criar uma</a>
-
-                </p>
-
-            </form>
-
-        </div>
-
-    </section>
-
+            <div class="container-fluid p-4">
+    
+                <form action="">
+    
+                    <section class="row">
+    
+                        <div class="mt-3">
+    
+                            <label class="fs-3 mt-4" for="email">E-mail</label>
+    
+                            <input type="email" name="email" id="email" placeholder="Informe o seu email" class="form-control mt-2 p-2 border-dark">
+    
+                        </div>
+    
+                        <div class="mt-3">
+                        
+                                <label class="fs-3 mt-4" for="senha">Senha</label>
+    
+                                <div class="input-group">
+    
+                                        <input type="password" name="senha" id="senha" class="form-control border-dark p-2 mt-2" placeholder="Informe sua senha" minlength="4">
+    
+                                            <span class="material-symbols-outlined btn btn-dark mt-2 input-group-append">
+        
+                                                visibility_off
+                    
+                                            </span>        
+                        
+                                </div>
+    
+                                <span class="mt-2" id="msgSenha"></span>
+                                                                                        
+                        </div>
+    
+                        <button class="btn btn-success mt-4 col-6 mx-auto p-2 rounded p-2">
+    
+                            LOGIN
+    
+                        </button>
+    
+                    </section>
+    
+                    <p class="text-center mt-4 fw-bold fs-2">Não possui conta?
+    
+                        <a class="link-primary text-decoration-none" href="cadastro.html" id="criarConta">clique aqui para criar uma</a>
+    
+                    </p>
+    
+                </form>
+    
+            </div>
+    
+        </section>
+    
+    </main>
+    
     <script src="script.js"></script>
 
 </body>

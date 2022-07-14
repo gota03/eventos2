@@ -1,7 +1,7 @@
 let email = document.querySelector("#email")
 let senha = document.querySelector("#senha")
 let msgSenha = document.querySelector("#msgSenha")
-
+let iconEye = document.querySelector("#senha + span")
 
 email.addEventListener("blur", ()=>{
     if(email.value.indexOf("@") == -1 && email.value.indexOf(".com") == -1 || email.value == ""){
@@ -19,6 +19,8 @@ senha.addEventListener("blur", ()=>{
         senha.classList.remove("border-dark")
         senha.classList.add("border-danger")
         msgSenha.textContent = "A senha precisa ter no minimo 4 caracteres"
+        msgSenha.classList.add("text-danger")
+        msgSenha.classList.add("mt-2")
     }
     else{
         senha.classList.remove("border-danger")
@@ -27,4 +29,13 @@ senha.addEventListener("blur", ()=>{
     }
 })
 
-
+iconEye.addEventListener("click", ()=>{
+    if(iconEye.textContent == "visibility"){
+        iconEye.textContent = "visibility_off"
+        senha.setAttribute("type", "password")
+    }
+    else{
+        iconEye.textContent = "visibility"
+        senha.setAttribute("type", "text")
+    }
+})
